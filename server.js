@@ -2,9 +2,6 @@
 
 
 
-// Cors for cross-origin allowance
-const cors = require( "cors" );
-app.use( cors() );
 
 
 
@@ -14,6 +11,9 @@ const app = express();
 app.use( express.json() );
 
 
+// Cors for cross-origin allowance
+const cors = require( "cors" );
+app.use( cors() );
 
 // Check for alive 
 app.get( '/', ( req, res ) => {
